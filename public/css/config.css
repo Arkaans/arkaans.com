@@ -70,12 +70,17 @@
 }
 
 body {
-  background: var(--dark2-color);
+  background: url(../images/bg.png), linear-gradient(180deg, rgba(15,15,15,0.3) 0%, rgba(0,0,0,0.8) 97%);
+  background-color: rgb(28,31,33); /* Couleur de fond de secours */
+  background-size: cover; /* Pour que l'image de fond couvre toute la fenêtre */
+  background-repeat: no-repeat; /* Pour empêcher la répétition de l'image */
 }
+
+
+
 
 #main {
   width: 100%;
-  min-height: calc(100vh - (101px + 200px));
   margin: 0 auto;
 }
 
