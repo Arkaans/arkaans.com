@@ -1,0 +1,184 @@
+header {
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.main-logo {
+    margin-bottom: 20px;
+    width: 256px;
+    height: 256px;
+}
+
+.main-nav {
+    z-index: var(--z-index-navbar);
+    position: relative;
+    display: flex;
+    height: 100px;
+    width: 100%;
+}
+
+.nav-content {
+    z-index: var(--z-index-navbar);
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 63px;
+    height: 100px;
+    margin:0 auto;
+    width: 88%;
+}
+
+.logo-navbar {
+    height: 40px;
+}
+
+.nav-list {
+    list-style: none;
+    margin-left: 30px;
+}
+
+/* 
+.nav-item {
+    
+} */
+
+.nav-link {
+    color: var(--light-color);
+    font-size: var(--navbar-font-size);
+    font-family: var(--body-font);
+    text-decoration: none;
+    height: 40px;
+    padding: 0px 20px;
+    text-align: center;
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    transition: color var(--transition-duration-fast);
+}
+
+.nav-link:hover {
+    color: var(--dark2-color);
+    text-decoration: none;
+    background:  var(--primary-color);
+}
+
+.nav-link:active {
+    color: var(--primary-color-hover);
+    text-decoration: none;
+}
+
+
+
+.main-nav .sub-menu {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    max-width:600px;
+    margin-top: 1px;
+    background-color: var(--secondary-color-hover);
+    border-radius: 0 0 5px 5px;
+    list-style: none;
+  }
+
+  .main-nav .sub-menu .sub {
+    flex: 0 0 auto;
+  }
+
+  .main-nav .sub-menu a {
+    padding: 20px 20px;
+    display: block;
+    min-width: 150px;
+    font-family: var(--body-font);
+    font-size: var(--body-font-size);
+    font-weight: bold;
+    color: var(--light-color);
+    text-decoration: none;
+    transition: color 250ms ease 0s;
+  }
+  
+  .main-nav .sub-menu a:hover {
+  border:none;
+  background: var(--secondary-color);
+  }
+
+  .main-nav a:hover + .sub-menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    align-items: auto;
+    align-content: start
+  }
+  
+  .main-nav .sub-menu:hover {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    align-items: auto;
+    align-content: start
+    
+  }
+
+
+
+.login-button {
+    background: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    padding: 10px 15px;
+    position: absolute;
+    right:0px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: var(--body-font);
+}
+.logout-button {
+    background: var(--light-color);
+    color: var(--dark-color);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    position: absolute;
+    right:0px;
+    padding: 10px 15px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: var(--body-font);
+}
+
+.profile-button {
+    background: var(--light-color);
+    color: var(--dark-color);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    position: absolute;
+    right:120px;
+    padding: 10px 15px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: var(--body-font);
+}
+
+.login-button:hover {
+    text-decoration: none;
+    background-color: var(--primary-color-hover);
+}
+
+.logout-button:hover {
+    text-decoration: none;
+    color: var(--light-color);
+    background-color: var(--danger-color-hover);
+}
+
+.profile-button:hover {
+    text-decoration: none;
+    background-color: var(--light-color-hover);
+}

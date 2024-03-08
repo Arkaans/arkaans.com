@@ -1,0 +1,101 @@
+.connect-module {
+    z-index: var(--z-index-modal);
+    height: 100%;
+    right: 0;
+    top: 0;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background: var(--fancy-color);
+    flex-direction: column;
+    width: 0; 
+    transition: width 0.4s ease; 
+    box-shadow: 0px 6px 15px 0 rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.connect-content {
+  top:15%;
+  position: absolute;
+}
+
+.logo-connect {
+  width: 60%;
+  margin: -10px auto 70px auto;
+}
+
+form {
+  height: auto;
+  flex-direction: column;
+  min-width: 350px;
+  margin: 0 auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.h1-connect {
+  font-size: var(--small-title-font-size);
+  font-family: var(--title-font);
+  color: var(--dark-color);
+  margin: 20px 0 70px 0;
+
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px 0;
+  font-family: var(--body-font);
+  text-align: left;
+  color: var(--dark-color);
+  margin: 20px 0 5px 0;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 15em;
+  margin: 5px 0 5px 0;
+  padding: 10px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: var(--body-font);
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+}
+
+select {
+  width: 10em;
+  padding: 10px;
+  margin: 5px 0 10px 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: var(--body-font);
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 1.4rem;
+  margin: 20px auto 30px auto;
+  font-weight: bold;
+  font-family: var(--body-font);
+  background: var(--primary-color);
+  color: var(--light-color);
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  display: flex;
+}
+
+.forgot-password {
+  font-size: var(--small-body-font-size);
+  font-family: var(--body-font);
+  color: var(--info-color);
+  text-decoration: none;
+  text-align: right;
+}
+button:hover {
+text-decoration: none;
+background-color: var(--primary-color-hover);
+}
